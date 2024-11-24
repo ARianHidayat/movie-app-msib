@@ -9,7 +9,7 @@ function Movie () {
     const [data, setData] = useState([])
 
     function fetchData() {
-      fetch(`http://www.omdbapi.com/?apikey=c227fee8&s=${inputRedux}`)
+      fetch(`https://www.omdbapi.com/?apikey=c227fee8&s=${inputRedux}`)
         .then(response => response.json())
         .then(data => setData(data.Search))
     }
